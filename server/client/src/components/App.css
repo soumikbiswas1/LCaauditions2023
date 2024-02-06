@@ -131,9 +131,10 @@
 /* form styles */
 .form-group {
   margin-bottom: 1rem;
-  background-color: rgba(238, 238, 236, 1); /* Make the background semi-transparent */
+  background-color: rgb(216, 219, 231); /* Make the background semi-transparent */
   border-radius: 10px;
   padding: 20px;
+  
 }
 .form-control {
   color: #495057 !important;
