@@ -34,16 +34,17 @@ module.exports = (app) => {
         name: req.user.name,
         
       });
-    } else {
-      res.json({
-        authenticated: false,
-        filledForm: false,
-        isadmin: false,
-        isSuperAdmin: false,
-        image: null,
-        name: null,
+    }
+    // } else {
+    //   res.json({
+    //     authenticated: false,
+    //     filledForm: false,
+    //     isadmin: false,
+    //     isSuperAdmin: false,
+    //     image: null,
+    //     name: null,
         
-      });
+    //   });
     }
   });
 
