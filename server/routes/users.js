@@ -24,7 +24,7 @@ module.exports = (app) => {
 
   // CHECK AUTHENTICATED //
   app.get("/api/current", (req, res) => {
-    if (req.isAuthenticated()) {
+    if (!req.isAuthenticated()) {
       res.json({
         authenticated: true,
         filledForm: req.user.responses ? true : false,
