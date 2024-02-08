@@ -45,7 +45,7 @@ module.exports = (app) => {
     //     name: null,
         
     //   });
-    }
+    //}
   });
 
   // view profile
