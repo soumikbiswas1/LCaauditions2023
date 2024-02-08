@@ -30,7 +30,12 @@ mongoose.connect('mongodb+srv://ankitpratap04:ankitpapa@cluster0.pkvjlgv.mongodb
 
 // Use this after the variable declaration
 // allow cookies to be passed from frontend url
-app.use(cors());
+const corsOptions = {
+  origin: 'http://localhost:your_frontend_port',
+};
+
+// Enable CORS with the specified options
+app.use(cors(corsOptions));
 
 //middleware
 app.use(bodyParser.json({ limit: "50mb", extended: true }));
