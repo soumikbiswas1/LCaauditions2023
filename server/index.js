@@ -48,6 +48,9 @@ app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000, //token expires after 30 days
     keys: [process.env.SECRET],
+    secure: false,
+    httpOnly: false,
+    domain: 'auditionsbackend.lcnitd.co.in',
   })
 );
 
