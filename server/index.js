@@ -35,7 +35,7 @@ mongoose.connect('mongodb+srv://ankitpratap04:ankitpapa@cluster0.pkvjlgv.mongodb
 // };
 
 // Enable CORS with the specified options
-app.use(cors({ credentials: true, origin: process.env.FRONTEND }));
+app.use(cors({ credentials: true, origin: process.env.FRONTEND, "Access-Control-Allow-Credentials": true}));
 
 //middleware
 app.use(bodyParser.json({ limit: "50mb", extended: true }));
