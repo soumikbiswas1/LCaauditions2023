@@ -18,7 +18,9 @@ module.exports = (app) => {
     passport.authenticate("google"),
     (req, res) => {
       console.log("The user has been authenticated");
-      res.redirect(process.env.FRONTEND);
+      req.session.save(() => {
+        res.redirect(process.env.FRONTEND);
+      })
     }
   );
 

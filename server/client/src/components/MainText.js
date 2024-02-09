@@ -4,7 +4,7 @@ import "./MainText.css";
 function MainText(props) {
   return (
     <>
-      <div class="test" contenteditable>
+      <div class="test">
         <p>
           <span class="main-text-effect">THE </span>
           <span class="main-text-effect">LITERARY </span>
