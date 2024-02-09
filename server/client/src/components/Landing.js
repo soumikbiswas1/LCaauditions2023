@@ -25,8 +25,7 @@ function Landing(props) {
 
   const onClickSignIn = async () => {
     console.log("The user has to signUp.");
-    window.open(`${process.env.REACT_APP_BACKEND_URL}/auth/google`, "_self", { withCredentials: true });
-
+    window.open(`${process.env.REACT_APP_BACKEND_URL}/auth/google`, "_self");
     await props.fetchUser();
   };
   const renderSignUpButton = () => {
