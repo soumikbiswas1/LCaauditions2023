@@ -15,12 +15,10 @@ module.exports = (app) => {
 
   app.get(
     "/auth/google/redirect",
-    passport.authenticate("google", redirects),
+    passport.authenticate("google"),
     (req, res) => {
       console.log("The user has been authenticated");
-      req.session.save(() => {
-        res.redirect(process.env.FRONTEND);
-      })
+      res.redirect(process.env.FRONTEND);
     }
   );
 
